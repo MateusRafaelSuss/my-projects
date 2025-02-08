@@ -1,0 +1,100 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #111;
+    color: #fff;
+  }
+  
+  header {
+    background: #222;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  /* Seção Hero */
+  .hero {
+    background: url('https://via.placeholder.com/1920x600?text=Dexter') no-repeat center center/cover;
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  .hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Seções das séries */
+  .series {
+    padding: 60px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .series:nth-child(even) {
+    background-color: #1a1a1a;
+  }
+  
+  .series .content {
+    flex: 1 1 400px;
+    padding: 20px;
+  }
+  
+  .series .content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .series .content p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .series .image {
+    flex: 1 1 400px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .series .image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+  }
+  
+  /* Footer */
+  footer {
+    background: #222;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .hero h2 {
+      font-size: 2.5rem;
+    }
+    .series {
+      flex-direction: column;
+    }
+  }
+  
